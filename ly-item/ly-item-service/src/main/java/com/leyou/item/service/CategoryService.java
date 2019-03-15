@@ -65,9 +65,9 @@ public class CategoryService {
 	 * @return
 	 */
 	public List<Category> queryAllByCid3(Long id) {
-		Category c3 = this.categoryMapper.selectByPrimaryKey(id);
-		Category c2 = this.categoryMapper.selectByPrimaryKey(c3.getParentId());
-		Category c1 = this.categoryMapper.selectByPrimaryKey(c2.getParentId());
+		Category c3 = categoryMapper.selectByPrimaryKey(id);
+		Category c2 = categoryMapper.selectByPrimaryKey(c3.getParentId());
+		Category c1 = categoryMapper.selectByPrimaryKey(c2.getParentId());
 		return Arrays.asList(c1,c2,c3);
 	}
 }

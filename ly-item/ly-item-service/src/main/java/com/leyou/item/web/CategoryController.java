@@ -27,7 +27,7 @@ public class CategoryController {
 	 */
 	@GetMapping("/list")
 	public ResponseEntity<List<Category>> queryCategoryListByPid(@RequestParam("pid") Long pid){
-		return ResponseEntity.ok(categoryService.queryCategoryListByPid(pid));//ResponseEntity.ok()：简写
+		return ResponseEntity.ok(categoryService.queryCategoryListByPid(pid)); //ResponseEntity.ok()：简写
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class CategoryController {
 	}
 
 	/**
-	 * 点击修改品牌 回显数据-品牌和分类
+	 * 点击修改品牌 回显数据-分类
 	 * @param ids
 	 * @return
 	 */

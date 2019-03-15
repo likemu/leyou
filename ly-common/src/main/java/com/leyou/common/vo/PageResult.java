@@ -12,7 +12,7 @@ public class PageResult<T> {
 
     public PageResult() {//无参构造函数
     }
-    public PageResult(Long total, List<T> items) {//商品列表分页查询
+    public PageResult(Long total, List<T> items) {//商品列表、品牌分页查询
         this.total = total;
         this.items = items;
     }

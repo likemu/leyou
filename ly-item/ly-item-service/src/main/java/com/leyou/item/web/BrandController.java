@@ -77,7 +77,7 @@ public class BrandController {
 	}
 
 	/**
-	 * 根据id查询品牌--回显
+	 * 根据id查询品牌--回显品牌 分类另外根据中间表去查询
 	 * @param id
 	 * @return
 	 */

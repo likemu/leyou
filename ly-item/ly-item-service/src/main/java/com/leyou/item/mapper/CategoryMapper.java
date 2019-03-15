@@ -15,7 +15,7 @@ import java.util.List;
 public interface CategoryMapper extends Mapper<Category> , IdListMapper<Category, Long> {
 
     /**
-     * 根据品牌id查询商品分类 点击修改品牌 回显数据
+     * 根据品牌id查询商品分类 点击修改品牌 回显分类数据
      * @param bid
      * @return
      */

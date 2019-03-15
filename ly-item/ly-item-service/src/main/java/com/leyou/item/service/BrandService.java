@@ -32,9 +32,9 @@ public class BrandService {
         //搜索字段过滤
         Example example = new Example(Brand.class);
         if (StringUtils.isNotBlank(key)) {
-            //过滤条件
+            //过滤条件 --名称为name属性或者letter属性 类似模糊查询
             example.createCriteria().orLike("name", "%" + key + "%")
-                    .orEqualTo("letter", key.toUpperCase());
+                    .orEqualTo("letter", key.toUpperCase()); //转成大写字母
         }
         //排序
         if (StringUtils.isNotBlank(sortBy)) {
